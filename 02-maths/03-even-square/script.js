@@ -12,5 +12,14 @@
 (() => {
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+    function carré (){
+    let a = 21
+    for(let i = 0; i < a; i += 2){
+        console.log(i ** 2);
+
+    }
+
+    }
+    carré()
     });
 })();
