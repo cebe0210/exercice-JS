@@ -20,7 +20,7 @@
         "orange",
         "mandarine",
         "fraise",
-        "durian",
+        "durian", 
         "pêche",
         "cerise",
         "raisin",
@@ -28,4 +28,19 @@
     ];
 
     // your code here
+    let run = document.getElementById("run");
+
+    function arrays(){
+        fruits.sort();
+       let unique = [];
+
+       for (let i = 0; i < fruits.length; i++){
+        if(i === 0 || fruits[i] !== fruits[i -1]){
+            unique.push(fruits[i])
+        }
+       }
+       console.table(unique);
+    }
+
+    run.addEventListener("click", arrays);
 })();
