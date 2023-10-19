@@ -40,6 +40,14 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
+      // your code here
+    let run = document.getElementById("run");
 
-    // your code here
+    function arrays(){
+       people.forEach(function (personne, index){
+            console.log("Personne n°" + (index +1) + " : Nom : " + personne.lastname)
+        });
+    }
+    run.addEventListener("click", arrays)
+  
 })();
