@@ -89,4 +89,28 @@
     ];
 
     // your code here
+    let run = document.getElementById("run");
+    let recherchenom = "Dupont";
+    let rechercheprenom = "Jean";
+
+    function arrays(){
+
+    let nomtrouve = people.filter(function(personne){
+        return personne.lastname == recherchenom;
+    });
+    let prenomtrouve = nomtrouve.filter(function(personne){
+        return personne.firstname == rechercheprenom;
+    })
+    if(nomtrouve.length > 0 && prenomtrouve.length > 0){
+        let email = prenomtrouve[0].email;
+        console.log(`L'adresse de ${rechercheprenom} ${recherchenom} est : ${email}`)
+    }
+    else{
+        console.log(`Aucune personne trouvée dans le tableau`)
+    }
+}
+
+    run.addEventListener("click", arrays)
+
 })();
+        
