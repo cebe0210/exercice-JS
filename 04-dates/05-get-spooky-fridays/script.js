@@ -14,7 +14,7 @@
     let run = document.getElementById("run");
     let yearin = document.getElementById("year");
 
-    run.addEventListener("click", calcul);
+    
 
     function calcul (){
         let year = parseInt(yearin.value);
@@ -33,5 +33,5 @@
             alert("Il n'y à aucun vendredi 13 en " + year);
         }
     }
-    
+    run.addEventListener("click", calcul);
 })();

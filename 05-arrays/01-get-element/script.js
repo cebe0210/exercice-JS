@@ -26,4 +26,12 @@
     ];
 
     // your code here
+    let run = document.getElementById("run");
+    run.addEventListener("click", arrays);
+
+    function arrays (){
+        let fruit= fruits[3];
+        alert(fruit);
+
+    }
 })();
