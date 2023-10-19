@@ -23,4 +23,23 @@
     ]);
 
     // your code here
+    let run = document.getElementById("run");
+
+    function arrays(){
+        const peoples = Array.from(people);
+        const somme = peoples.length;
+        let search = "Alexandre";
+
+        if(peoples.includes(search)){
+           console.log(`Le nombre de personne est de : ${somme} et ${search} est present dans le tableau`);  
+        }
+        else{
+            console.log(`Le nombre de personne est de : ${somme} et ${search} n'est pas present dans le tableau`);
+        }
+        
+       
+    }
+
+    run.addEventListener("click", arrays);
+
 })();
