@@ -22,6 +22,13 @@
         "raisin",
         "cerise",
     ];
-
     // your code here
+    let run = document.getElementById("run");
+
+    function modif(){
+      fruits[0] = "banane";
+      fruits[9] = "kiwi";
+      console.log(fruits);
+    }
+run.addEventListener("click", modif);
 })();
