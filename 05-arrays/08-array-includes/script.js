@@ -35,7 +35,5 @@
         console.log(result);
 
     }
-
-
     run.addEventListener("click", arrays);
 })();

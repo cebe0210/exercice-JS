@@ -89,4 +89,15 @@
     ];
 
     // your code here
+    let run = document.getElementById("run");
+
+    function arrays(){
+        let sum = people.reduce((somme, personne) =>{
+            return somme + personne.age;
+        }, 0);
+        console.log(sum);
+    }
+    run.addEventListener("click", arrays);
+
+
 })();

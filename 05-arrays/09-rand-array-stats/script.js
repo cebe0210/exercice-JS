@@ -47,11 +47,6 @@
     }
     average = document.getElementById("average");
     average.textContent = somme/table.length;
-
-
-
     }
-   
-
     run.addEventListener("click", arrays )
 })();
