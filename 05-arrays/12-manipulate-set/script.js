@@ -22,6 +22,27 @@
         "raisin",
         "cerise",
     ]);
+     // your code here
 
-    // your code here
+    let run = document.getElementById("run");
+
+    function arrays(){
+        const tabfruits = Array.from(fruits);
+
+
+        const modif = tabfruits.map(fruit => {
+            if (fruit === "pomme"){
+                return "banane";
+            }
+            else if (fruit === "cerise"){
+                return "kiwi";
+            }
+            else {
+                return fruit;
+            }
+        })
+        const modifruits = new Set(modif);
+        console.table(Array.from(modifruits))
+    }
+    run.addEventListener("click", arrays);
 })();
