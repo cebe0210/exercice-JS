@@ -26,4 +26,16 @@
     ];
 
     // your code here
+
+    let run = document.getElementById("run");
+
+    function arrays(){
+        let search = "pomme";
+        let result = fruits.includes(search);
+        console.log(result);
+
+    }
+
+
+    run.addEventListener("click", arrays);
 })();
