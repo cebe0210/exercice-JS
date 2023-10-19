@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+    let dobday = document.getElementById("dob-day");
+    let dobmonth = document.getElementById("dob-month");
+    let dobyear = document.getElementById("dob-year");
+    let run = document.getElementById("run");
+
+    function calculage (){
+        let day = parseInt(dobday.value);
+        let month = parseInt(dobmonth.value);
+        let year = parseInt(dobyear.value);
+        let dateactu= new Date();
+        let anniv = new Date(year, month -1, day); //month -1 car l'indexation commence à zero.
+        let age = dateactu - anniv;
+        let agean = Math.floor(age / (365.25 * 24 * 60 * 60 * 1000));
+        let agemois = Math.floor((age % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
+        let agejour = Math.floor((age % (365.25 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+
+            alert("Vous avez actuellement " + agean + " ans, " + agemois + " mois et " + agejour + " jours." );
+    }
+    run.addEventListener("click", calculage)
 })();
