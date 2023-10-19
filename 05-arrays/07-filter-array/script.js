@@ -89,4 +89,22 @@
     ];
 
     // your code here
+    let run = document.getElementById("run");
+    function arrays (){
+        let agepersonne = people.filter(function(personne){
+                return personne.age >= 18;
+            });
+            let majeur = agepersonne.map(function(personne) {
+                return {
+                   firstname: personne.firstname,
+                   lastname: personne.lastname,
+                   age: personne.age
+                };
+            });
+            console.table(majeur);
+
+
+        
+    }
+    run.addEventListener("click", arrays)
 })();

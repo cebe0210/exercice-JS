@@ -96,10 +96,10 @@
     function arrays(){
 
     let nomtrouve = people.filter(function(personne){
-        return personne.lastname == recherchenom;
+        return personne.lastname === recherchenom;
     });
     let prenomtrouve = nomtrouve.filter(function(personne){
-        return personne.firstname == rechercheprenom;
+        return personne.firstname === rechercheprenom;
     })
     if(nomtrouve.length > 0 && prenomtrouve.length > 0){
         let email = prenomtrouve[0].email;
