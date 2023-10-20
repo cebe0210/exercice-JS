@@ -17,4 +17,28 @@
         }
     }
     // your code here
+
+  //newcat(){
+        //console.log(`${this.name} ${this.age}`);
+    //}
+
+
+    let run = document.getElementById("run");
+
+    function inst(){
+
+    let cat1 = new Cat("Skitty", 9);
+    let cat2 = new Cat("Pixel", 6);
+
+    cat1.newcat =() => {
+        console.log(`Nom :${cat1.name}, Age : ${cat1.age} ans`);
+    };
+    cat2.newcat =() => {
+        console.log(`Nom :${cat2.name}, Age : ${cat2.age} ans`);
+    };
+    cat1.newcat();
+    cat2.newcat();
+    };
+    run.addEventListener("click", inst)
+
 })();
