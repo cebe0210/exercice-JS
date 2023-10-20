@@ -17,12 +17,6 @@
         }
     }
     // your code here
-
-  //newcat(){
-        //console.log(`${this.name} ${this.age}`);
-    //}
-
-
     let run = document.getElementById("run");
 
     function inst(){
