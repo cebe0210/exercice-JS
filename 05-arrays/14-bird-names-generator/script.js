@@ -39,4 +39,31 @@
     ]);
 
     // your code here
+
+    let run = document.getElementById("run");
+    let target = document.getElementById("target");
+
+    function arrays(){
+    
+    let randomb = Math.floor(Math.random() * birds.length);
+    let elementb = birds[randomb];
+    let birdName = elementb.name;
+
+    let adjectif = Array.from(adjectives)
+    let randoma = Math.floor(Math.random() * adjectif.length);
+    let elementa = adjectif[randoma];
+    if (elementb.fem){
+        elementa += "e";
+     }
+    
+
+    target.innerHTML = `${birdName} ${elementa}`;
+
+    console.log(birdName + " " + elementa);
+}
+
+    run.addEventListener("click", arrays);
+
+
+
 })();
