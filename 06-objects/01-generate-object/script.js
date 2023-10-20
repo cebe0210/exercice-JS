@@ -11,4 +11,21 @@
 
 (() => {
     // your code here
+    let infos = [
+        { 
+        lastname: "Berthet", 
+        firstname: "Cédric",
+        age: 38, 
+        city: "Koekelberg",
+        country: "Belgique",
+        }
+    ];
+
+
+    let run = document.getElementById("run");
+    let info = infos[0];
+    run.addEventListener("click", () => {
+        console.log(`Je m'appel ${info.firstname} ${info.lastname} et j'ai ${info.age}. \n Je vis à ${info.city} en ${info.country}.`);
+    });
+       
 })();
