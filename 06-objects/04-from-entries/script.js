@@ -11,6 +11,24 @@
 
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
-    const values = ["Skitty", "cat", 9, "female", "tabby"];
+    const values = ["Skitty", "cat", 9, "female"];
     // your code here
+    let run = document.getElementById("run");
+
+    function object(){
+       if(keys.length === values.length){
+        let object = {};
+
+        for(i = 0; i < keys.length; i++){
+            object[keys[i]]= [values[i]];
+        }
+        console.table(object);
+       }
+       else{
+        console.log("les deux tableaux ne contiennent pas le meme nombre de valeur");
+       }
+
+    }
+
+    run.addEventListener("click", object);
 })();
