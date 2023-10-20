@@ -27,4 +27,16 @@
         user: null,
     };
     // your code here
+    let run = document.getElementById("run");
+
+    function invent(){
+        for(let i = 0; i < computers.length; i++){
+            computers[i] = Object.assign({}, defaultProps, computers[i]);
+        }
+        console.table(computers)
+    }
+    run.addEventListener("click", invent);
+
+
+
 })();
