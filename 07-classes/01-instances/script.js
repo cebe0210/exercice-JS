@@ -30,7 +30,7 @@
     cat2.newcat =() => {
         console.log(`Nom :${cat2.name}, Age : ${cat2.age} ans`);
     };
-    cat1.newcat();
+    //cat1.newcat();
     cat2.newcat();
     };
     run.addEventListener("click", inst)
