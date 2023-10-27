@@ -11,4 +11,7 @@
 
 (() => {
     // your code here
+
+    const target = document.getElementById("target");
+    target.textContent ="owned";
 })();

@@ -11,4 +11,6 @@
 
 (() => {
     // your code here
+    const target = document.querySelector("p.target");
+    target.textContent = "owned"
 })();

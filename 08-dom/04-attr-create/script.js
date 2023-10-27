@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+    const source = document.getElementById("source");
+    const valeur = source.getAttribute("data-image");
+
+    const target = document.getElementById("target");
+    const image = document.createElement("img");
+    image.setAttribute("src", valeur);
+    target.appendChild(image);
+
+    source.parentNode.removeChild(source);
 })();

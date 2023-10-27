@@ -17,7 +17,7 @@
             this.lastname = lastname;
         }
          sayHello(){
-            console.log(`${this.firstname} ${this.lastname}`)
+            console.log(`Hello, ${this.firstname} ${this.lastname}`)
         }
     }
     let run = document.getElementById("run");
